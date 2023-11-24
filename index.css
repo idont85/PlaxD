@@ -1,0 +1,70 @@
+#main_logo {
+    border: dashed;
+    text-align: center;
+    width: 25%;
+    float: center;
+    border-radius: 99px;
+    vertical-align: center;
+    border-color: #cfc6b0;
+    background-color: #212326;
+}
+
+#logo_title{
+    color: #ad8821;
+}
+
+body {
+    background-color: #121212;
+}
+
+.option_boxes {
+    border: solid;
+    background-color: #153a6b;
+    z-index: 9999;
+    height: 70vh;
+    width: 30%;
+    border-radius: 20px;
+    float: left;
+    margin-left: 3vh;
+    margin-right: 10px;
+    margin-top: 8vh;
+    box-shadow: 8px 8px #00060d;
+    border-color: white;
+}
+
+.optionbox_labels {
+    color:white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    padding-bottom: 20;
+
+}
+
+#to_cps {
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    width: 90%;
+    font-family: 'Sometype Mono', monospace;
+    height: 10vh;
+    font-size: 30px;
+    background-color: #020566;
+    color: white;
+}
+
+.inner_button_layout {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#first {
+    width: 160vh;
+    height: 100vh;
+    float: left;
+}
+
+#second {
+    float: left;
+    width: 160vh;
+    height: 100vh;
+}

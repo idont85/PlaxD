@@ -68,3 +68,19 @@ body {
     width: 160vh;
     height: 100vh;
 }
+
+
+.option_images {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 10%;
+}
+
+#ubd {
+    height: 96.28vh;
+    border: none;
+    width: 99vw;
+    border-radius: 0px;
+}

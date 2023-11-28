@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100&display=swap');
+
 #main_logo {
     border: dashed;
     text-align: center;
@@ -18,6 +20,7 @@ body {
 }
 
 .option_boxes {
+  transition: transform .2s; /* Animation */
     border: solid;
     background-color: #153a6b;
     z-index: 9999;
@@ -30,6 +33,10 @@ body {
     margin-top: 8vh;
     box-shadow: 8px 8px #00060d;
     border-color: white;
+}
+
+.option_boxes:hover {
+  transform: scale(1.065);
 }
 
 .optionbox_labels {
@@ -75,7 +82,8 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    margin-top: 10%;
+    margin-top: 30%;
+    border-radius: 50px;
 }
 
 #ubd {
@@ -83,4 +91,67 @@ body {
     border: none;
     width: 99vw;
     border-radius: 0px;
+}
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+
+.wrapper{
+  position: fixed;
+}
+
+.link_wrapper{
+  position: relative;
+  margin-top: 40%;
+}
+
+a{
+  display: block;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #333;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid green;
+  transition: all .35s;
+}
+
+.icon{
+  width: 50px;
+  height: 50px;
+  border: 3px solid transparent;
+  position: absolute;
+  transform: rotate(45deg);
+  right: 0;
+  top: 0;
+  z-index: -1;
+  transition: all .35s;
+}
+
+.icon svg{
+  width: 30px;
+  position: absolute;
+  top: calc(50% - 15px);
+  left: calc(50% - 15px);
+  transform: rotate(-45deg);
+  fill: #2ecc71;
+  transition: all .35s;
+}
+
+a:hover{
+  width: 200px;
+  border: 3px solid #2ecc71;
+  background: transparent;
+  color: #2ecc71;
+}
+
+a:hover + .icon{
+  border: 3px solid #2ecc71;
+  right: -25%;
 }

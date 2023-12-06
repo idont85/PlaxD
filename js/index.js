@@ -50,3 +50,8 @@ function tempCheck() {
     var next = getCookie("tab_pic");
     alert(next)
 }
+
+function startUp() {
+  var favicon = getCookie("tab_pic")
+  var tabby = getCookie("tab_name")
+}

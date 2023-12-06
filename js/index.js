@@ -54,4 +54,14 @@ function tempCheck() {
 function startUp() {
   var favicon = getCookie("tab_pic")
   var tabby = getCookie("tab_name")
+  setFavicons(favicon)
+  document.title = tabby;
+}
+
+function setFavicons(img){
+  let headTitle = document.querySelector('head');
+  let setFavicon = document.createElement('link');
+  setFavicon.setAttribute('rel','shortcut icon');
+  setFavicon.setAttribute('href',img);
+  headTitle.appendChild(setFavicon);
 }

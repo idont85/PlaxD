@@ -38,6 +38,8 @@ function setCookie(cname, cvalue, exdays) {
   }
 
 function changeTab(tabpic,tryin) {
+  var tabpic = document.getElementById('tab_pic_input').value
+  var tryin = document.getElementById('tab_name_input').value
   setCookie("tab_pic", tabpic, 365);
   setCookie("tab_name", tryin, 365);
   alert("Complete!")

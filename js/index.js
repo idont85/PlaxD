@@ -37,8 +37,8 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-function changeTab() {
-    var link, favicon;
+function changeTab(link) {
+    
     link = document.getElementById('tab_pic_input').value;
     alert(link)
     setCookie("tab_name", link, 365);
@@ -47,6 +47,6 @@ function changeTab() {
 }
 
 function tempCheck() {
-    var current = getCookie("tab_pic_input");
+    var current = getCookie("tab_name");
     alert(current)
 }

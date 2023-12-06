@@ -40,6 +40,7 @@ function setCookie(cname, cvalue, exdays) {
 function changeTab() {
     var link, favicon;
     link = document.getElementById('tab_pic_input').value;
+    alert(link)
     setCookie("tab_name", link, 365);
     alert("done")
 

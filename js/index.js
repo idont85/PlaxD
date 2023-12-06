@@ -37,14 +37,16 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-function changeTab(tryin) {
-    alert(tryin)
+function changeTab(tryin,tabpic) {
     setCookie("tab_name", tryin, 365);
-    alert("done")
+    setCookie("tab_pic", tabpic, 365)
+    alert("Complete!")
 
 }
 
 function tempCheck() {
     var current = getCookie("tab_name");
     alert(current)
+    var next = getCookie("tab_pic");
+    alert(next)
 }

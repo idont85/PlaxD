@@ -38,9 +38,9 @@ function setCookie(cname, cvalue, exdays) {
   }
 
 function changeTab(tabpic,tryin) {
-    setCookie("tab_name", tryin, 365);
-    setCookie("tab_pic", tabpic, 365)
-    alert("Complete!")
+  setCookie("tab_pic", tabpic, 365);
+  setCookie("tab_name", tryin, 365);
+  alert("Complete!")
 
 }
 

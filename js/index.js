@@ -37,12 +37,10 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-function changeTab(tabpic,tryin) {
-  var tabpic = document.getElementById('tab_pic_input').value
-  var tryin = document.getElementById('tab_name_input').value
-  setCookie("tab_pic", tabpic, 365);
-  setCookie("tab_name", tryin, 365);
-  alert("Complete!")
+function changeTab(tryin,tabpic) {
+    setCookie("tab_name", tryin, 365);
+    setCookie("tab_pic", tabpic, 365)
+    alert("Complete!")
 
 }
 
@@ -56,14 +54,15 @@ function tempCheck() {
 function startUp() {
   var favicon = getCookie("tab_pic")
   var tabby = getCookie("tab_name")
-  setFavicons(favicon)
-  document.title = tabby;
+  
 }
 
-function setFavicons(img){
+
+function setFavicons(favImg){
   let headTitle = document.querySelector('head');
   let setFavicon = document.createElement('link');
   setFavicon.setAttribute('rel','shortcut icon');
-  setFavicon.setAttribute('href',img);
+  setFavicon.setAttribute('href',favImg);
   headTitle.appendChild(setFavicon);
 }
+setFavicons('https://spemer.com/img/favicon/favicon.png');

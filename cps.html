@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CPS Counter - PlaxD</title>
+    <script src="js/index.js"></script>
     <link rel="stylesheet" href="cps.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <button onclick="history.back()" id="yes"><span class="material-symbols-outlined">
     arrow_back
     </span> Back</button>
-<body>
+<body onload='startUp()'>
     <div>
         <h1 id="header">CPS Counter</h1>
         <button id="cPSCounter" class="btn" onclick="countCPS()">

@@ -56,7 +56,8 @@ function tempCheck() {
 function startUp() {
   var favicon = getCookie("tab_pic")
   var tabby = getCookie("tab_name")
-  
+  document.title = tabby
+  setFavicons(favicon)
 }
 
 
@@ -67,4 +68,3 @@ function setFavicons(favImg){
   setFavicon.setAttribute('href',favImg);
   headTitle.appendChild(setFavicon);
 }
-setFavicons('https://spemer.com/img/favicon/favicon.png');

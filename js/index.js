@@ -40,9 +40,10 @@ function setCookie(cname, cvalue, exdays) {
 function changeTab() {
   var tryin = document.getElementById('tab_name_input').value;
   var tabpic = document.getElementById('tab_pic_input').value;
-    setCookie("tab_name", tryin, 365);
-    setCookie("tab_pic", tabpic, 365)
-    alert("Complete!")
+  setCookie("tab_name", tryin, 365);
+  setCookie("tab_pic", tabpic, 365)
+  alert("Complete!")
+  window.location.reload()
 
 }
 
@@ -54,11 +55,14 @@ function tempCheck() {
 }
 
 function startUp() {
-  alert('running')
   var quandale = getCookie("tab_pic")
   var tabby = getCookie("tab_name")
-  document.title = tabby
-  setFavicons(quandale)
+  if (quandale != '') {
+    setFavicons(quandale)
+  } 
+  if (tabby != '') {
+    document.title = tabby;
+  }
 }
 
 

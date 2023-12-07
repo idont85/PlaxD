@@ -54,6 +54,7 @@ function tempCheck() {
 }
 
 function startUp() {
+  alert('running')
   var quandale = getCookie("tab_pic")
   var tabby = getCookie("tab_name")
   document.title = tabby

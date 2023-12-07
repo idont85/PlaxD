@@ -54,10 +54,10 @@ function tempCheck() {
 }
 
 function startUp() {
-  var favicon = getCookie("tab_pic")
+  var quandale = getCookie("tab_pic")
   var tabby = getCookie("tab_name")
   document.title = tabby
-  setFavicons(favicon)
+  setFavicons(quandale)
 }
 
 

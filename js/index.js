@@ -37,7 +37,9 @@ function setCookie(cname, cvalue, exdays) {
     }
   }
 
-function changeTab(tryin,tabpic) {
+function changeTab() {
+  var tryin = document.getElementById('tab_name_input').value;
+  var tabpic = document.getElementById('tab_pic_input').value;
     setCookie("tab_name", tryin, 365);
     setCookie("tab_pic", tabpic, 365)
     alert("Complete!")
